@@ -8,12 +8,15 @@ We use Twitter data to improve the performance of an epidemiological model like 
 
 ## Data
 
-COVID-19 data are found from [www.canada.ca](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html)
+COVID-19 data are found from [www.canada.ca](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html). This data set includes informations to generate the SIR curve.
 
-Tweets are downloaded from [kaggle](https://www.kaggle.com/smid80/coronavirus-covid19-tweets)
+Tweets are downloaded from [kaggle](https://www.kaggle.com/smid80/coronavirus-covid19-tweets). This data set include all Tweets that are tagged COVID19 or its synonyms, including non English one. Hence, preprocessing is needed.
 
 ## Result
 
-We use March data as the training set and first 4 days in April as test set. The predictive power of our model is much better than the baseline model (using SIR only).
+We use March data to train our model and first 4 days in April to evaluate its predictive performance. The predictive power of our model is much better than the baseline model (using SIR only).
+
+[!graph](./reports/img/image1.pdf)
+[!table](./reports/img/image2.pdf)
 
 
