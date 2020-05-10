@@ -8,9 +8,9 @@ We use Twitter data to improve the performance of an epidemiological model like 
 
 ## Data
 
-COVID-19 data are found from https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html
+COVID-19 data are found from [www.canada.ca](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html)
 
-Tweets are downloaded from https://www.kaggle.com/smid80/coronavirus-covid19-tweets
+Tweets are downloaded from [kaggle](https://www.kaggle.com/smid80/coronavirus-covid19-tweets)
 
 ## Result
 
