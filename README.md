@@ -10,7 +10,7 @@ We use Twitter data to improve the performance of an epidemiological model like 
 
 COVID-19 data are found from [www.canada.ca](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html). This data set includes all informations to generate the SIR curve.
 
-Tweets are downloaded from [kaggle](https://www.kaggle.com/smid80/coronavirus-covid19-tweets). This data set contains all Tweets that are tagged as COVID19 (or synonyms of it), including non English ones. Hence, preprocessing is needed. Because this data set is very large (~40M records), we use Spark to process in a distributed environment.
+Tweets are downloaded from [kaggle](https://www.kaggle.com/smid80/coronavirus-covid19-tweets). This data set contains all Tweets that are tagged as COVID19 (or its synonyms), including non English ones. Hence, preprocessing is needed. Because this data set is very large (~40M records), we use Spark to process in a distributed environment.
 
 ## Result
 
