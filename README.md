@@ -14,7 +14,7 @@ Tweets are downloaded from [kaggle](https://www.kaggle.com/smid80/coronavirus-co
 
 ## Result
 
-We use March data to train our model and first 4 days in April to evaluate its predictive performance. The predictive power of our model is much better than the baseline model (using SIR only).
+We use data in March to train the model and the first 4 days in April to evaluate its predictive performance. The predictive power of our model is much better than the baseline model (using SIR only).
 
 ![image1](./reports/img/image1.jpg)
 ![image2](./reports/img/image2.jpg)
