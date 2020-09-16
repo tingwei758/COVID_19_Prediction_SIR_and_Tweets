@@ -2,9 +2,13 @@
 
 More detailed explanation can be found in [reports/COVID-19_Prediction.pdf](./reports/COVID-19_Prediction.pdf)
 
+## Idea
+
+Models like SIR are good at explaining the general trend of an epidemic like COVID. However, due to its small degree of freedom, these models has limited power when capturing smaller fluctuations of the curve and therefore is not good at predicting number of infection cases in short-term. Our hypothesis is that these smaller fluctuations are usually caused by people's reaction to the News and Social Media. Therefore, we combine these extra information together with SIR model to come with a model with better predictive power.
+
 ## Methodology
 
-We use Twitter data to improve the performance of an epidemiological model like SIR on its predictive power of future COVID 19 infection cases. More specically, we generate the  SIR curve using Least Squared Estimate as the baseline function. We then collect unigrams and bigrams from COVID 19 related Tweets and count their frequency at a daily level. We then rank the keywords by their absolute correlation to the derative of the cumulative cases curve. Finally, we input the baseline function and the top 20 keywords as explanatory variables of a Linear Regression, number of confirmed case (leading 4 days) as response variable, using L2 regularization to avoid overfitting.
+We first generate the SIR curve using Least Squared Estimate, and consider it as the baseline. We then collect unigrams and bigrams from COVID 19 related Tweets and count their frequency at a daily level. After that, we rank the keywords by their absolute correlation to the derative of the cumulative cases curve. Finally, we use the baseline curve and the top 20 keywords' daily trends as explanatory variables of a Linear Regression, number of confirmed case (leading 4 days) as the response variable, using L2 regularization to avoid overfitting. Note that the problem of autocorrelation is elimiated because the SIR curve itself is a non-linear time series function.
 
 ## Data
 
