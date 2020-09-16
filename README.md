@@ -4,7 +4,7 @@ More detailed explanation can be found in [reports/COVID-19_Prediction.pdf](./re
 
 ## Idea
 
-Models like SIR are good at explaining the general trend of an epidemic like COVID. However, due to its small degree of freedom, these models has limited power when capturing smaller fluctuations from the curve and therefore is not good at prediction in short-term. Our hypothesis is that these smaller fluctuations are usually caused by people's reactions to the News and Social Media. Therefore, we combine these extra information from the News and Social Media together with SIR model to construct a model with better predictive power.
+Models like SIR are good at explaining the general trend of an epidemic like COVID 19. However, due to its small degree of freedom, these models has limited power when capturing smaller fluctuations from the curve and therefore is not good at prediction in short-term. Our hypothesis is that these smaller fluctuations are usually caused by people's reactions to the News and Social Media. Therefore, we combine these extra information from the News and Social Media together with SIR model to construct a model with better predictive power.
 
 ## Methodology
 
