@@ -8,7 +8,7 @@ Models like SIR are good at explaining the general trend of an epidemic like COV
 
 ## Methodology
 
-We first generate the SIR curve using Least Squared Estimate, and consider it as the baseline. We then collect unigrams and bigrams from COVID 19 related Tweets and count their frequency at a daily level. After that, we rank the keywords by their absolute correlation to the derative of the cumulative cases curve. Finally, we use the baseline curve and the top 20 keywords' daily trends as explanatory variables of a Linear Regression, number of confirmed case (leading 4 days) as the response variable, using L2 regularization to avoid overfitting. Note that the problem of autocorrelation is elimiated because the SIR curve itself is a non-linear time series function.
+We first generate the SIR curve using Least Squared Estimate, and consider it as the baseline. We then collect unigrams and bigrams from COVID 19 related Tweets and count their frequency at a daily level. After that, we rank the keywords by their absolute correlation to the derative of the cumulative cases curve. Finally, we use the baseline curve and the top 20 keywords' daily trend as explanatory variables of a Linear Regression, number of confirmed case (leading 4 days) as the response variable, using L2 regularization to avoid overfitting. Note that the problem of autocorrelation is elimiated because the SIR curve itself is a non-linear time series function.
 
 ## Data
 
