@@ -4,7 +4,7 @@ More detailed explanation can be found in [reports/COVID-19_Prediction.pdf](./re
 
 ## Methodology
 
-We use Twitter data to improve the performance of an epidemiological model like SIR on its predictive power of future COVID 19 infection cases. More specically, we generate the  SIR curve using Least Squared Estimate as the baseline function. We then collect unigrams and bigrams from COVID 19 related Tweets and count their frequency at a daily level. We then rank the keywords by their absolute correlation to the derative of the cumulative cases curve. Finally, we input the baseline function and the top 20 keywords as explanatory variables of a Linear Regression, number of confirmed case as response variable, using L2 regularization to avoid overfitting.
+We use Twitter data to improve the performance of an epidemiological model like SIR on its predictive power of future COVID 19 infection cases. More specically, we generate the  SIR curve using Least Squared Estimate as the baseline function. We then collect unigrams and bigrams from COVID 19 related Tweets and count their frequency at a daily level. We then rank the keywords by their absolute correlation to the derative of the cumulative cases curve. Finally, we input the baseline function and the top 20 keywords as explanatory variables of a Linear Regression, number of confirmed case (leading 4 days) as response variable, using L2 regularization to avoid overfitting.
 
 ## Data
 
